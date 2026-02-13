@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Image-only Link Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://marvelux-design.github.io/my-valentine/img2.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://marvelux-design.github.io/my-valentine/img2.jpeg">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop muted>
+        <source src="photograph.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- Tap anywhere overlay (mobile fallback) -->
+    <div id="tap-overlay">
+        <p>Hey Pookie, Tap anywhere to start the music 🎵                               From Charles</p>
+    </div>
+
+    <div class="container">
+        <div class="gif_container">
+            <img src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="Cute GIF">
+        </div>
+        <h1>Obi m, Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        
+        <!-- Music Button -->
+        <button class="music-btn" onclick="toggleMusic()">🔇 Unmute Music</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
